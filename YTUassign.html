@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif, monospace, serif, fantasy, Pyidaungsu;
+        }
+
+        #topred {
+            width: 100%;
+            height: 5px;
+            background-color: red;
+        }
+
+        #secondgray {
+            width: 100%;
+            height: 40px;
+            background-color: gray;
+            color: whitesmoke;
+
+        }
+
+        #secondgray ul li {
+            list-style: none;
+            float: right;
+            color: whitesmoke;
+           
+            width: 70px;
+            text-align: center;
+            line-height: 38px;
+            display: block;
+            border-right: 2px solid black;
+        }
+
+        .thirdlogo {
+            width: 100%;
+            height: 120px;
+            background-color: snow;
+
+            
+            font-size: 2rem;
+
+            display: flex;
+        }
+
+        .thirdlogo img {
+            width: 180px;
+            height: auto;
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+
+        #text {
+            text-align: center;
+            color: #ffb100;
+            margin-left: 5%;
+        }
+
+        .fourthmenu {
+            width: 100%;
+            height: 40px;
+            background-color: #4d4646;
+
+        }
+
+        .fourthmenu ul {
+            margin-left: 8%;
+        }
+
+        .fourthmenu ul li {
+            list-style: none;
+            float: left;
+            font-size: 14px;
+            color: gray;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .fourthmenu ul li ul{
+            display: none;
+        }
+        .phot {
+            background: url("photo/nier5.jpg");
+            width: 100%;
+            height: 80vh;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+        }
+
+        .image {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            display: flex;
+        }
+
+        #div1 img {
+            width: 80%;
+            height: 65%;
+            margin: 15%;
+        }
+
+        #div2 {
+            color: white;
+            margin: 5%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff6c00;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 40%;
+        }
+        .gridrow{
+            margin: 5%;
+        }
+.cards{
+ 
+ display: grid;
+ 
+ grid-template-columns: repeat(3, 1fr);
+  
+ grid-auto-rows: auto;
+  
+ grid-gap: 1rem;
+  
+ }
+  
+ .card {
+  text-align: center;
+ border: 2px solid #1e401b;
+  line-height: 30px;
+ border-radius: 4px;
+  font-size: 18px;
+ padding: .5rem;
+  
+ }
+        .rect{
+            display: flex;
+            
+           width: 80%;
+            height: 60%;
+            margin: 5%;
+            padding-right: 5%;
+        }
+        .rectpic{
+            width: 100%;
+        }
+        .rectpic img{
+            width: 100%;
+            height: 80%;
+            padding: 3%;
+        } 
+        .rectmes{
+            line-height: 30px;
+            padding: 3%;
+        }
+        .events{
+             
+            margin-left: 5%;
+            margin-right: 5%;
+            display: flex;
+            width: 80%;
+            height: 60%;
+        }
+        .evpic{
+            padding-right: 8%;
+        }
+        .evpic img{
+            width: 140%;
+            height: 120%;
+        }
+        .moreb{
+            margin-left: 67%;
+        }
+        .welco{
+          
+            line-height: 30px;
+            width: 80%;
+            margin: 5%;
+        }
+        .dep{
+           background: url("photo/nier4.jpg");
+            width: 100%;
+            height: 40vh;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+        }
+        .depart{
+ 
+ display: grid;
+  
+ grid-template-columns: repeat(3, 1fr);
+  margin: 5%;
+ grid-auto-rows: auto;
+  
+ grid-gap: 1rem;
+  
+ }
+  
+ .ments {
+  width:95%;
+  height: 100%;
+ border: 2px solid white;
+justify-self: center;
+ border-radius: 4px;
+  text-align: center;
+     color: white;
+     font-size: 22px;
+ margin-top: 13%;
+  
+ }
+        .updnew{
+            width: 100%;
+            margin-top:3%;
+            padding: 0;
+            
+        }
+        .updnew img{
+            width:90%;
+            
+        }
+        .firstline,.secondline{
+            display: flex;
+            height: 140%;
+            padding:0.5%;
+            margin-left: 3%;
+            text-align: center;
+            color: #ff6c00;
+        }
+        .footer{
+            margin-top:3%;
+            background-color: #2d2b2e;
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            display: flex;
+        }
+        .footer div{
+            width: 33.333%;
+            
+            color: white;
+            margin: 4%;
+            line-height: 30px;
+        }
+        .about{
+            text-align: left;
+        }
+        .recent img{
+          width:20%;
+            height: auto;
+        }
+        
+    </style>
+    <title>YTU Design</title>
+</head>
+
+<body>
+    <div class="head">
+        <div id="topred"></div>
+        <div id="secondgray">
+            <ul>
+                <li>Alumini</li>
+                <li>Library</li>
+                <li>Sign in</li>
+                <li>Register</li>
+            </ul>
+        </div>
+        <div class="thirdlogo">
+            <div><img src="photo/nier3.jpg" /></div>
+            <div id="text">YANGON TECHNOLOGICAL UNIVERSITY<br>
+                <span style="color: gray;">ရန် ကုန် နည်း ပ ညာ တ က္က သိုလ်</span> </div>
+        </div>
+        <div class="fourthmenu">
+            <ul class="nav">
+                <li>HOME</li>
+                <li>ABOUT YTU &#8595;
+                <ul style="list-style: none;">
+                    <li>Rector's message</li>
+                    <li>Histroy</li>
+                </ul>
+                </li>
+                <li>ADMISSION &#8595;</li>
+                <li>DEPARTMENT &#8595;</li> 
+                <li>ACADEMICS &#8595;</li>
+                <li>NEWS AND EVENTS &#8595;</li>
+                <li>RESEARCH &#8595;</li>
+                <li>CONFERENCES &#8595;</li>
+                <li>INTERNATIONAL AFFAIRS</li>
+                <li>GALLERY</li>
+            </ul>
+        </div>
+        <div class="phot"><br><br><br>
+            <div class="image">
+                <div id="div1"><img src="photo/nier6.jpg" /></div>
+                <div id="div2">
+                    <h2>Ministry of Education Yangon Technological<br> University The Seventh International Conference <br>
+                        on Science and Engineering 2016 Opening <br>Ceremony</h2><br><br>
+                    <p>
+                        Ministry of Education Yangon Technological University The Seventh International Conference on Science and Engineering 2016 Opening Ceremony<br><br><br><br><br>
+                        <a href="#">Read More&#10148;</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bdy">
+        <div class="gridrow">
+            <div class="cards">
+                <div class="card">
+                    <h1>Our Objectives</h1><br><br>
+                        <p>
+                   It is envisaged that YTU will become a<br>
+                   highly-prestigious technological centre<br>
+                   of excellence in teaching and research <br>
+                   with a strong commitment to <br>
+                   systematically educate and train<br><br>
+                   <a href="#" style="float: right;">Read More&#10148;</a></p>
+                    
+                </div>
+                <div class="card">
+                    <h1>Our Missions</h1><br><br>
+                    <p>To educate and train students <br>
+                    systematically to become engineers, <br>
+                    specialists and researchers who can <br>
+                    effectively contribute to the building of <br>
+                    a modern developed nation<br><br>
+                     <a href="#" style="float: right;">Read More&#10148;</a>                   
+                    </p>
+                </div>
+                <div class="card">
+                    <h1>Programs</h1><br><br>
+                    <p>when an unknown printer took a galley <br>
+                    of type and scrambled it to make a type<br>
+                     specimen book. It has survived not only <br>
+                     five centuries, but also the leap into <br>
+                     electronic typesetting.<br><br>
+                      <a href="#" style="float: right;">Read More&#10148;</a> 
+                     </p>
+                </div>
+            </div>
+        </div>
+        <div class="rect">
+            <div class="rectpic"><img src="photo/nier2.jpg"/></div>
+            <div class="rectmes">
+               <h1 style="color: #ff6c00;">Rector’s Messages</h1><br>
+                <p>Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. VISION It is…
+                <br><br><a href="#" style="float: right;">Read More&#10148;</a>
+                </p>
+            </div>
+        </div>
+        <div><h1 style="color: #ff6c00; text-align: center;">YTU Events</h1><br>
+        <div class="events">
+            <div class="evpic"><img src="photo/nier1.jpg"/></div>
+            <div class="evpic"><img src="photo/nier4.jpg"/></div>
+            <div class="evpic"><img src="photo/nier5.jpg"/></div>
+            <div class="evpic"><img src="photo/nier7.jpg"/></div>
+        </div><br><br>&nbsp;
+        <div class="moreb"><a href="#">More&#10148;</a></div>
+    </div>
+    <div class="welco">
+        <h1 style="color: #ff6c00;font-size: 2rem;text-align: center;">WELCOME TO YTU</h1><br>
+        <p>Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student’s majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. Find out more about the history of YTU at … </p>
+        <br><a href="#" style="text-align: center;">Read More&#10148;</a>
+    </div>
+    <div class="dep">
+     <div class="depart">
+        <div class="ments">
+            <h1 style="color: #ff6c00; text-align: center">25</h1><br>
+            <p>DEPARTMENT PUBLISHED</p>
+        </div>
+        <div class="ments">
+            <h1 style="color: #ff6c00; text-align: center">1000</h1><br>
+            <p>PROFESSIONAL LECTURES</p>
+        </div>
+        <div class="ments">
+            <h1 style="color: #ff6c00; text-align: center">2000</h1><br>
+            <p>STUDENT ENROLLMENT</p>
+        </div>
+    </div>  
+    </div>
+    <div class="updnew">
+       <h1 style="color: #ff6c00;text-align: center;font-size: 2.5rem;">Updated News</h1>
+        <div class="firstline">
+         <div><img src="photo/nier1.jpg"/><br>
+         Ministry of Education Yangon Technological...</div>
+         <div><img src="photo/nier2.jpg"/><br>
+         Myanmar's first Deploma Programme in...</div>
+         <div><img src="photo/nier3.jpg"/><br>
+         7th WWSPZP </div>
+        </div>
+        <div class="secondline">
+          <div><img src="photo/nier4.jpg"/><br>
+          Swal Daw Leaf</div>
+         <div><img src="photo/nier5.jpg"/><br>
+         Rector's Collaborate Visit to University...</div>
+         <div><img src="photo/nier6.jpg"/><br>
+         Traning of LoT and Inviromental...</div>   
+        </div>
+        <br><div class="moreb"><a href="#">More&#10148;</a></div>
+    </div>
+    </div>
+    <div class="footer">
+       <div class="about">
+           <h1>ABOUT YTU</h1>
+           <p>The present Yangon Technological University (Y.T.U) began as the Department of Engineering in 1923 under the Rangoon (Yangon) University. The Engineering Department was situated downtown, on the Bogyoke Aung San street. B.Sc. (Engineering) program in Civil Engineering began in 1924.</p>
+           <br>© Yangon Technological University - 2020 
+       </div> 
+       <div class="out">
+           <h1>OUR LINKS</h1>
+            <ul>
+               <li>Home</li>
+            <li>Architecture</li>
+            <li>Civil Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Mining Engineering</li>
+            <li>Alumini</ul>
+       </div>
+       <div class="recent">
+           <h1>Recent Posts</h1><br>
+           
+           <img src="photo/nier6.jpg"/>Events Two<br>November 18, 2019
+          <br>
+           <img src="photo/nier7.jpg"/>Events One <br>November 18, 2019
+              
+       </div>
+    </div>
+</body>
+
+</html>
